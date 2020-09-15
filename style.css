@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+html {
+	font-size: 14px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: hsl(0, 0%, 100%);
+	margin: 0 auto;
+	background-color: hsl(217, 28%, 13%);
+	width: 100%;
+	max-width: 375px;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;        
+} 
+
+p {
+	margin: 0;
+}
+
+/* -------HEADER -------------- */
+
+.header__nav {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5%;
+	background-color: hsl(217, 28%, 15%);
+
+}
+
+.logo__link {
+	display: block;
+	/* margin-bottom: -7px; */
+	width: 85px;
+}
+
+.logo__link img {
+	width: 100%;
+}
+
+.nav__list {
+	display: flex;
+	flex-wrap: nowrap;
+	
+	list-style-type: none;
+	padding: 0;
+	margin: 0 40px 0 0;
+}
+
+.nav__item {
+	margin-right: 15%;
+
+}
+
+.nav__item-link {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+}
+
+.link-hover:hover {
+	color: hsl(176, 68%, 64%);
+	transition: 0.3s;
+}
+
+/*================HERO ======================*/
+
+.main__wrapper {
+	padding: 0 30px;
+}
+
+.hero__wrapper {
+	background-image: url("images/bg-curvy-mobile.svg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-color: hsl(217, 28%, 15%);
+	padding-top: 30px;
+}
+
+.hero__image {
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.hero__heading {
+	margin-top: -70px;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 1.5rem;
+}
+
+.section__text {
+	font-size: 1.1rem;
+	line-height: 1.5;
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.button {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	text-align: center;
+	background: linear-gradient(10deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+
+	max-width: 255px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 50px;
+}
+
+.button:active, .signup__button:active {
+	transform: scale(0.98);
+}
+
+.button:hover {
+	background: linear-gradient(45deg, hsl(176, 68%, 70%), hsl(198, 60%, 56%));
+	transition: 0.3s;
+}
+
+.signup__button:hover {
+	background: linear-gradient(10deg, hsl(176, 68%, 70%), hsl(198, 60%, 56%));
+	transition: 0.3s;
+}
+
+/*================= FEATURES ==================*/
+
+.section__features {
+	margin-bottom: 150px;
+}
+
+.section__features__item {
+	margin-top: 80px;
+	padding-top: 100px;
+
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 22%;
+}
+
+.image-pc {
+	background-image: url("images/icon-access-anywhere.svg");
+}
+
+.image-check {
+	background-image: url("images/icon-security.svg");
+	background-size: 17%;
+}
+
+.image-time {
+	background-image: url("images/icon-collaboration.svg");
+}
+
+.image-file {
+	background-image: url("images/icon-any-file.svg");
+}
+
+.features__heading {
+	text-align: center;
+	font-size: 1.3rem;
+	margin-bottom: 15px;
+}
+
+.features__text {
+	text-align: center;
+	line-height: 1.5;
+}
+
+/*======================EXTRA INFO ===============================*/
+
+.img__info {
+	width: 100%;
+}
+
+.info__heading {
+	font-size: 1.3rem;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.info__text {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.info__link {
+	text-decoration: none;
+	color: hsl(176, 68%, 64%);
+	font-size: 0.95rem;
+}
+
+.info__link__wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.info__link::after {
+	content: "";
+	display: block;
+	width: 138px;
+	position: absolute;
+	margin-top: 5px;
+	border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+
+.info__link-arrow {
+	margin-left: 5px;
+}
+
+.info__link ~ img {
+	transition: 0.3s;
+}
+
+.info__link:hover ~ img {
+	transform: scale(1.3);
+	transition: 0.3s;
+}
+
+/*=================FEEDBACK===========================*/
+
+.section__feedback {
+	margin: 150px 0;
+	padding-bottom: 150px;
+}
+
+.feedback_wrapper {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.feedback__card {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: hsl(219, 30%, 18%);
+	padding: 30px 25px 25px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+
+
+}
+
+.added-quote {
+	position: relative;
+}
+
+.added-quote::before {
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: 10px;
+	display: block;
+	width: 20%;
+	height: 20%;
+	background-image: url('images/bg-quotes.png');
+	background-repeat: no-repeat;        
+	background-size: contain;
+	z-index: -1;
+} 
+
+.feedback__text {
+	font-size: 0.8rem;
+	line-height: 1.7;
+}
+
+.feedback__signature {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: start;
+	margin-top: 15px;
+}
+
+.feedback__photo {
+	border-radius: 50%;
+	width: 12%;
+	height: 12%;
+	margin-right: 10px;
+}
+
+.feedback__author {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.feedback__name {
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.feedback__job {
+	font-size: 0.6rem;
+}
+
+/*====================SIGN UP=======================*/
+
+.signup__card {
+	width: 90%;
+
+	background-color: hsl(217, 28%, 15%);
+	border-radius: 5px;
+	padding:40px 30px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.842);
+	position: absolute;
+	top: -175px;
+	right: 19px;
+}
+
+.signup__title {
+	text-align: center;
+}
+
+.signup__card form {
+	margin-top: 30px;
+}
+
+.email__field {
+	border: none;
+	display: block;
+	width: 90%;
+	background-color: #fff;
+	color: hsl(0, 0%, 70%);  /*====================================NOT WORKING*/
+	font-size: 0.8rem;
+	padding: 20px 30px 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	margin-bottom: 25px;
+}
+
+.signup__button {
+	border: none;
+	cursor: pointer;
+	display: block;
+	width: 90%;
+	padding: 15px;
+	background: linear-gradient(45deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+
+	font-size: 1rem;
+	text-transform: capitalize;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+
+/*==================== FOOTER  ===============================*/
+
+footer .main__wrapper {
+	padding-top: 250px;
+	background-color: hsl(216, 53%, 9%);
+	position: relative;
+}
+
+.logo__link-footer img {
+	width: 55%;
+	margin-left: 10px;
+}
+
+.contacts__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+dd, dt {
+	margin: 0;
+}
+
+dt {
+	width: 30%;
+}
+
+dd {
+	width: 30%;
+}
+
+.contacts__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts__inside__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+
+	margin-bottom: 10px;
+}
+
+.contacts__inside__wrapper dt {
+	width: 10%;
+	margin-right: 3%;
+}
+
+.contacts__inside__wrapper dd {
+	width: 85%;
+}
+
+.center {
+	align-items: center;
+}
+
+.contacts__place  {
+	margin-top: 4px;
+}
+
+.contacts__phone {
+	width: 60%;
+	margin-top: 6px;
+}
+
+.contacts__text {
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+
+.contacts__email {
+	margin-top: 4px;
+}
+
+.contacts__link {
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+}
+
+.contacts__link:hover {
+	color: hsl(198, 60%, 50%);
+	transition: 0.3s;
+}
+
+.navigation__links {
+	margin-top: 40px;
+	list-style: none;
+	padding-left: 0;
+}
+
+.footer__link {
+	display: inline-block;
+	color: #fff;
+	padding: 0 0 13px;
+	margin: 0;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.social__icons {
+	margin-top: 60px;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.social__link {
+	display: block;
+	width: 7%;
+	margin-right: 7%;
+}
+
+.social__link img {
+	width: 100%;
+}
+
+
+/*----------- desktop 1440px ---------- */
+
+/* @media (min-width: 1440px) {
+	
+	html {
+		font-size: 25px;
+	}
+
+	body {
+		max-width: 1440px;
+	}
+} */
