@@ -342,7 +342,7 @@ p {
 	display: block;
 	width: 90%;
 	background-color: #fff;
-	color: hsl(0, 0%, 70%);  /*====================================NOT WORKING*/
+	color: hsl(0, 0%, 70%); 
 	font-size: 0.8rem;
 	padding: 20px 30px 15px;
 	margin-left: auto;
@@ -489,17 +489,3 @@ dd {
 .social__link img {
 	width: 100%;
 }
-
-
-/*----------- desktop 1440px ---------- */
-
-/* @media (min-width: 1440px) {
-	
-	html {
-		font-size: 25px;
-	}
-
-	body {
-		max-width: 1440px;
-	}
-} */
