@@ -3,6 +3,7 @@
 
 html {
 	font-size: 14px;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +31,10 @@ p {
 }
 
 /* -------HEADER -------------- */
+
+.header {
+	position: relative;
+}
 
 .header__nav {
 	display: flex;
@@ -342,7 +347,7 @@ p {
 	display: block;
 	width: 90%;
 	background-color: #fff;
-	color: hsl(0, 0%, 70%); 
+	color: hsl(0, 0%, 70%);  /*====================================NOT WORKING*/
 	font-size: 0.8rem;
 	padding: 20px 30px 15px;
 	margin-left: auto;
@@ -488,4 +493,37 @@ dd {
 
 .social__link img {
 	width: 100%;
+}
+
+.up-button {
+	position: fixed;
+	z-index: 1;
+	padding: 0 0 20px;
+	bottom: 75px;
+	transform: translate(530%);
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	color: hsl(198, 60%, 50%);
+	text-align: center;
+	vertical-align: middle;
+	border: 5px solid white;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+}
+
+.shown {
+	display: inline-block;
+}
+
+.nav-scroll {
+	position: fixed;
+	top: 0;
+	padding: 20px 15px;
+	min-width: 375px;
+	background-color: hsl(218, 28%, 13%);
+	z-index: 2;
+	border-radius: 0 0 15px 15px;
 }
